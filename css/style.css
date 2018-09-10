@@ -267,11 +267,11 @@ footer .redes li a i {
 }
 /* Contato */
 
-.contato h2 {
+.faleconosco h2 {
     color: #333;
 }
 
-.contato hr {
+.faleconosco hr {
     border: 1px solid #333;
     
 }
@@ -325,3 +325,41 @@ footer .redes li a i {
     text-align: center;
     padding-top: 130px;
     margin-left: 90px;
+}
+
+/* Tooltip */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    background-color: #1874CD;
+    color: #fff;
+    width: 80px;
+    height: 25px;
+    padding: 5px;
+    margin: 20px 100px;
+    text-align: center;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 245px;
+    background-color: #fefefe;
+    color: #222;
+    text-align: justify;
+    border-radius: 6px;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    bottom: -180%;
+    left: 50%;
+    margin-left: 60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border: 1px solid #666;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
